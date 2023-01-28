@@ -5,7 +5,8 @@ const main = () => {
 
 const bindButtonToCode = async (buttonId, fileName) => {
 	const button = document.getElementById(buttonId);
-	const fileContents = await fetch(fileName);
+	const response = await fetch(fileName);
+	const fileContents = await response.text();
 	button.addEventListener('click', () => {
 		navigator.clipboard.writeText(fileContents);
 	})
