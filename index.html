@@ -3,14 +3,42 @@
 	<head>
 		<title>CodeDraw Samples</title>
 		<meta charset="utf-8" />
-		<link ref="stylesheet" type="text/css" href="./styles.css" />
+		<link rel="stylesheet" type="text/css" href="./styles.css" />
 		<script src="./script.js" defer></script>
 	</head>
 	<body>
-		<button type="button" id="download-particle-gravity-button">Copy Code</button>
-		<img src="./assets/ParticleGravityCode.png" alt="Particle Gravity Code Example" />
-		<video width="600" height="600" controls>
-			<source src="./assets/ParticleGravityVideo.mp4" type="video/mp4">
-		</video>
+		<div class="sample">
+			<div class="description">
+				<h1>Particle Gravity</h1>
+				<button type="button" id="download-particle-gravity-button">Copy Code to Clipboard</button>
+				<a href="./assets/particle-gravity/ParticleGravity.java">ParticleGravity.java</a>
+				<p>
+					A particle Game where each particle moves towards the mouse.
+					The closer the particle gets the faster it moves.
+				</p>
+				<video width="600" height="600" controls>
+					<source src="./assets/particle-gravity/ParticleGravityVideo.mp4" type="video/mp4">
+				</video>
+			</div>
+			<img src="./assets/particle-gravity/ParticleGravityCode.png" alt="Particle Gravity Code Example" />
+		</div>
+		<div class="sample">
+			<div class="description">
+				<h1>Game of Life</h1>
+				<button type="button" id="download-game-of-life-button">Copy Code to Clipboard</button>
+				<a href="./assets/game-of-life/GameOfLife.java">GameOfLife.java</a>
+				<p>
+					An implementation of Conway's Game of Life.
+					The rules that decide which cell is white or black can be found in the
+					<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" referrerpolicy="noreferrer">Conway's Game of Life Wikipedia article</a>.
+					This implementation also let's the user black cells by clicking on a white cell and moving the mouse
+					or setting white cells by clicking on a black cell and moving the mouse.
+				</p>
+				<video width="600" height="600" controls>
+					<source src="./assets/game-of-life/GameOfLifeVideo.mp4" type="video/mp4">
+				</video>
+			</div>
+			<img src="./assets/game-of-life/GameOfLifeCode.png" alt="Particle Gravity Code Example" />
+		</div>
 	</body>
 </html>
