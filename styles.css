@@ -19,3 +19,7 @@ body {
 .description {
 	width: 700px;
 }
+
+.description > video {
+	background-color: black;
+}
